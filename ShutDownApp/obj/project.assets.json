@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marek.peisar\\source\\repos\\ShutDownApp\\ShutDownApp\\ShutDownApp.csproj",
+      "projectUniqueName": "C:\\Users\\marek.peisar\\Documents\\OsobniGitHub\\ShutDownApplication\\ShutDownApp\\ShutDownApp.csproj",
       "projectName": "ShutDownApp",
-      "projectPath": "C:\\Users\\marek.peisar\\source\\repos\\ShutDownApp\\ShutDownApp\\ShutDownApp.csproj",
+      "projectPath": "C:\\Users\\marek.peisar\\Documents\\OsobniGitHub\\ShutDownApplication\\ShutDownApp\\ShutDownApp.csproj",
       "packagesPath": "C:\\Users\\marek.peisar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marek.peisar\\source\\repos\\ShutDownApp\\ShutDownApp\\obj\\",
+      "outputPath": "C:\\Users\\marek.peisar\\Documents\\OsobniGitHub\\ShutDownApplication\\ShutDownApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
