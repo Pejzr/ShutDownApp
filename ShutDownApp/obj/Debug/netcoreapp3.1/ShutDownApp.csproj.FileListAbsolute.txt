@@ -1,0 +1,17 @@
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\obj\Debug\netcoreapp3.1\ShutDownApp.csprojAssemblyReference.cache
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\obj\Debug\netcoreapp3.1\ShutDownApp_MarkupCompile.cache
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\obj\Debug\netcoreapp3.1\ShutDownApp_MarkupCompile.lref
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\bin\Debug\netcoreapp3.1\ShutDownApp.exe
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\bin\Debug\netcoreapp3.1\ShutDownApp.deps.json
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\bin\Debug\netcoreapp3.1\ShutDownApp.runtimeconfig.json
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\bin\Debug\netcoreapp3.1\ShutDownApp.runtimeconfig.dev.json
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\bin\Debug\netcoreapp3.1\ShutDownApp.dll
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\bin\Debug\netcoreapp3.1\ShutDownApp.pdb
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\obj\Debug\netcoreapp3.1\ShutDownApp.g.resources
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\obj\Debug\netcoreapp3.1\ShutDownApp.AssemblyInfoInputs.cache
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\obj\Debug\netcoreapp3.1\ShutDownApp.AssemblyInfo.cs
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\obj\Debug\netcoreapp3.1\ShutDownApp.dll
+C:\Users\marek.peisar\source\repos\ShutDownApp\ShutDownApp\obj\Debug\netcoreapp3.1\ShutDownApp.pdb

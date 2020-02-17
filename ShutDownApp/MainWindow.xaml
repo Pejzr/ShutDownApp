@@ -1,0 +1,19 @@
+﻿<Window x:Class="ShutDownApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShutDownApp"
+        mc:Ignorable="d"
+        Title="Vypnutí počítače" Height="497" Width="300">
+    <Window.Background>
+        <SolidColorBrush Color="#FF1999DC"/>
+    </Window.Background>
+    <Grid x:Name="gridContainer" Width="280" Height="466">
+        <Button Name="BtnHour" Content="Vypnout za hodinu" HorizontalAlignment="Center" VerticalAlignment="Top" Height="88" Width="178" Click="Btn_Click_ShutDownHour" Margin="0,15,0,0"/>
+        <Button Name="Btn2Hours" Content="Vypnout za 2 hodiny" HorizontalAlignment="Center" Margin="0,234,0,0" VerticalAlignment="Top" Height="89" Width="178" Click="Btn_Click_ShutDown2Hours"/>
+        <Button Name="BtnHalfHour" Content="Vypnout za půl hodiny" HorizontalAlignment="Center" VerticalAlignment="Top" Height="90" Width="178" Click="Btn_Click_ShutDownHalfHour" Margin="0,124,0,0"/>
+        <TextBlock Name ="datelbl" FontSize="18" Text="" TextAlignment="Center" TextWrapping="Wrap" Background="White" Margin="51,346,51,89"/>
+        <Button Name="BtnShutDown" Content="Zastavit Vypnutí" HorizontalAlignment="Center" Height="24" Margin="0,419,0,0" VerticalAlignment="Top" Width="178" Click="CancelShutDown" Background="#FFD4FA2A"/>
+    </Grid>
+</Window>
