@@ -5,15 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ShutDownApp"
         mc:Ignorable="d"
-        Title="Vypnutí počítače" Height="497" Width="300">
+        Title="Vypnutí počítače" Height="424" Width="600">
     <Window.Background>
         <SolidColorBrush Color="#FF1999DC"/>
     </Window.Background>
-    <Grid x:Name="gridContainer" Width="280" Height="466">
-        <Button Name="BtnHour" Content="Vypnout za hodinu" HorizontalAlignment="Center" VerticalAlignment="Top" Height="88" Width="178" Click="Btn_Click_ShutDownHour" Margin="0,15,0,0"/>
-        <Button Name="Btn2Hours" Content="Vypnout za 2 hodiny" HorizontalAlignment="Center" Margin="0,234,0,0" VerticalAlignment="Top" Height="89" Width="178" Click="Btn_Click_ShutDown2Hours"/>
-        <Button Name="BtnHalfHour" Content="Vypnout za půl hodiny" HorizontalAlignment="Center" VerticalAlignment="Top" Height="90" Width="178" Click="Btn_Click_ShutDownHalfHour" Margin="0,124,0,0"/>
-        <TextBlock Name ="datelbl" FontSize="18" Text="" TextAlignment="Center" TextWrapping="Wrap" Background="White" Margin="51,346,51,89"/>
-        <Button Name="BtnShutDown" Content="Zastavit Vypnutí" HorizontalAlignment="Center" Height="24" Margin="0,419,0,0" VerticalAlignment="Top" Width="178" Click="CancelShutDown" Background="#FFD4FA2A"/>
+    <Grid x:Name="gridContainer" Width="500" Height="568" Margin="50,0,50,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="81*"/>
+            <RowDefinition Height="203*"/>
+        </Grid.RowDefinitions>
+        <Button Name="BtnHour" Content="Vypnout za hodinu" HorizontalAlignment="Left" VerticalAlignment="Top" Height="88" Width="178" Click="Btn_Click_ShutDownHour" Margin="322,25,0,0"/>
+        <Button Name="Btn2Hours" Content="Vypnout za 2 hodiny" HorizontalAlignment="Left" VerticalAlignment="Top" Height="89" Width="178" Click="Btn_Click_ShutDown2Hours" Margin="322,122,0,0" Grid.Row="1"/>
+        <Button Name="BtnHalfHour" Content="Vypnout za půl hodiny" HorizontalAlignment="Left" VerticalAlignment="Top" Height="90" Width="178" Click="Btn_Click_ShutDownHalfHour" Margin="322,152,0,0" Grid.RowSpan="2"/>
+        <TextBlock Name ="datelbl" FontSize="18" Text="" TextAlignment="Center" TextWrapping="Wrap" Background="White" Margin="39,128,283,237" Grid.Row="1"/>
+        <Button Name="BtnShutDown" Content="Zastavit Vypnutí" HorizontalAlignment="Left" Height="24" Margin="39,187,0,0" VerticalAlignment="Top" Width="178" Click="CancelShutDown" Background="#FFD4FA2A" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Name="dobaVypnuti" Margin="39,63,0,54" Padding="10" FontSize="18" Text="" TextWrapping="Wrap" TextAlignment="Center" Width="178" Background="White" TextChanged="dobaVypnuti_TextChanged"/>
+        <Button Name="spustOdpocet" Content="Start" HorizontalAlignment="Left" Margin="84,12,0,0" VerticalAlignment="Top" Height="28" Width="88" Click="spustOdpocet_Click" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="84,113,0,0" Text="(HH:MM:SS)" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Red" FontSize="18" FontWeight="SemiBold" FontStyle="Normal" FontStretch="Normal"/>
+        <TextBlock HorizontalAlignment="Left" Margin="39,36,0,0" Text="Zadejte čas vypnutí:" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="22" FontSize="15" FontWeight="Bold"/>
     </Grid>
 </Window>
