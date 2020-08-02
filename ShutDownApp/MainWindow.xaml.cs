@@ -87,7 +87,8 @@ namespace ShutDownApp
         {
             if((dobaVypnuti.Text.Length == 2) || (dobaVypnuti.Text.Length == 5))
             {
-                dobaVypnuti.Text = ":" + dobaVypnuti.Text;
+                dobaVypnuti.Text = dobaVypnuti.Text + ":";
+                dobaVypnuti.Select(dobaVypnuti.Text.Length, 0);
             }
         }
 
