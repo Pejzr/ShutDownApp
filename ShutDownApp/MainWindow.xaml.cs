@@ -83,19 +83,8 @@ namespace ShutDownApp
             datelbl.Text = String.Empty;
         }
 
-        private void dobaVypnuti_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if((dobaVypnuti.Text.Length == 2) || (dobaVypnuti.Text.Length == 5))
-            {
-                dobaVypnuti.Text = dobaVypnuti.Text + ":";
-                dobaVypnuti.Select(dobaVypnuti.Text.Length, 0);
-            }
-        }
-
         private void spustOdpocet_Click(object sender, RoutedEventArgs e)
         {
-            List<char> delayValue = new List<char>();
-            //int realDelay = 0;
             string textToCount = "";
 
             foreach (char c in dobaVypnuti.Text)
@@ -103,31 +92,18 @@ namespace ShutDownApp
                 textToCount += c;
             }
 
-            textToCount = String.Join("", textToCount.Split(':'));
+            if (Int32.Parse(textToCount.Substring(3, 2)) > 59)
+            {
+                string message = "Nelze zadat počet minut větší než 59!";
+                string title = "Chyba zadání!";
+                MessageBox.Show(message, title);
+                dobaVypnuti.Text = "00:00";
+                return;
+            }
 
-            // evenodd určuje, zda poslední číslice času je lichá nebo sudá, a podle toho se následně provádí výpočet delay
-            int evenodd = textToCount.Length % 2 == 0 ? 2 : 1;
-            delay = 0;
-            if (textToCount.Length <= 2)
-            {
-                delay = Int32.Parse(textToCount);
-            }
-            else if (textToCount.Length <= 4)
-            {
-                //delay = textToCount.Length;
-                delay = (Int32.Parse(textToCount.Substring(0, evenodd)) * 60) + (Int32.Parse(textToCount.Substring(evenodd, 2)));
-                //delay = 60 * Int32.Parse(textToCount.Substring(0, 2));
-            }
-            else
-            {
-                delay = (Int32.Parse(textToCount.Substring(0, evenodd)) * 3600) + (Int32.Parse(textToCount.Substring(evenodd, 2)) * 60) + (Int32.Parse(textToCount.Substring((2 + evenodd),2)));
-            }
-            
+            delay = (Int32.Parse(textToCount.Substring(0, 2)) * 3600) + (Int32.Parse(textToCount.Substring(3, 2)) * 60);
 
-            //textToCount = "";
-            //datelbl.Text = delay.ToString();
-            //datelbl.Text = textToCount;
-            dobaVypnuti.Text = null;
+            dobaVypnuti.Text = "00:00";
             Startclock();
         }
     }

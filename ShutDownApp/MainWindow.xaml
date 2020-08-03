@@ -19,9 +19,9 @@
         <Button Name="BtnHalfHour" Content="Vypnout za půl hodiny" HorizontalAlignment="Left" VerticalAlignment="Top" Height="90" Width="178" Click="Btn_Click_ShutDownHalfHour" Margin="322,152,0,0" Grid.RowSpan="2"/>
         <TextBlock Name ="datelbl" FontSize="18" Text="" TextAlignment="Center" TextWrapping="Wrap" Background="White" Margin="39,128,283,237" Grid.Row="1"/>
         <Button Name="BtnShutDown" Content="Zastavit Vypnutí" HorizontalAlignment="Left" Height="24" Margin="39,187,0,0" VerticalAlignment="Top" Width="178" Click="CancelShutDown" Background="#FFD4FA2A" Grid.Row="1"/>
-        <TextBox HorizontalAlignment="Left" Name="dobaVypnuti" Margin="39,63,0,54" Padding="10" FontSize="18" Text="" TextWrapping="Wrap" TextAlignment="Center" Width="178" Background="White" TextChanged="dobaVypnuti_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Name="dobaVypnuti" Margin="39,63,0,54" Padding="10" FontSize="18" Text="00:00" TextWrapping="Wrap" TextAlignment="Center" Width="178" Background="White"/>
         <Button Name="spustOdpocet" Content="Start" HorizontalAlignment="Left" Margin="84,12,0,0" VerticalAlignment="Top" Height="28" Width="88" Click="spustOdpocet_Click" Grid.Row="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="84,113,0,0" Text="(HH:MM:SS)" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Red" FontSize="18" FontWeight="SemiBold" FontStyle="Normal" FontStretch="Normal"/>
+        <TextBlock HorizontalAlignment="Left" Margin="90,113,0,0" Text="(HH:MM)" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Red" FontSize="18" FontWeight="SemiBold" FontStyle="Normal" FontStretch="Normal"/>
         <TextBlock HorizontalAlignment="Left" Margin="39,36,0,0" Text="Zadejte čas vypnutí:" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="22" FontSize="15" FontWeight="Bold"/>
     </Grid>
 </Window>
